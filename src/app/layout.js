@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,22 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header>
-            <nav className="bg-green-800 flex justify-center py-2">
-              <ul className="flex justify-center gap-5 text-white text-lg font-bold">
-                <li>
-                  Home
-                </li>
-                <li>
-                  Shop
-                </li>
-                <li>
-                  About 
-                </li>
-                <li>
-                  Contact
-                </li>
-              </ul>
-            </nav>
+           <Navbar></Navbar>
         </header>
         <main>
         {children}
