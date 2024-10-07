@@ -18,11 +18,11 @@ const Navbar = () => {
         },
         {
             title: "About Us",
-            slug: "about-us"
+            slug: "about"
         },
         {
             title: "Contact Us",
-            slug: "/contact-us"
+            slug: "/contact"
         }
     ]
 
